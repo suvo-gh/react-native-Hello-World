@@ -2,7 +2,9 @@ import React from "react";
 import {
   View,
   SafeAreaView,
-  Text
+  Text,
+  Button,
+  Alert
 } from 'react-native';
 
 function App() {
@@ -21,6 +23,10 @@ function App() {
         <Text>
           Hello World!
         </Text>
+        <Button
+        title="Press me"
+        onPress={() => Alert.alert('Cannot press this one')}
+      />
       </View>
     </SafeAreaView>
   )
